@@ -3,7 +3,7 @@ module.exports = [
     name: 'configType',
     type: 'list',
     message: 'Choose a EditorConfig Type',
-    choices: ['basic','advanced']
+    choices: ['basic','advanced'],
     default: 'basic'
   },
 ]
