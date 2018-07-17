@@ -15,5 +15,3 @@ install:
   - node --version
   - npm --version
 
-build: off
-
