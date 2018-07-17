@@ -3,13 +3,15 @@
 # Docs: https://docs.gitlab.com/ce/pages/
 image: node:latest
 
+before_script:
+  - yarn
+
 pages:
   cache:
     paths:
     - node_modules/
 
   script:
-  - yarn
   - yarn docs:build
   artifacts:
     paths:
