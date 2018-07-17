@@ -4,7 +4,8 @@
   "description": "A VueJS CLI Plugin that generates a .editorconfig file for you.",
   "main": "index.js",
   "scripts": {
-    "docs": "vuepress build docs",
+    "docs:serve": "vuepress serve docs",
+    "docs:build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
