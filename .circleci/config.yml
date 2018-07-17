@@ -1,0 +1,31 @@
+
+version: 2
+jobs:
+  node:
+    working_directory: ~/vue-cli-plugin-editorconfig
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+      - restore_cache:
+          key: npm-v1-{{ checksum "package.json" }}-{{ arch }}
+      
+      - run: yarn install
+      
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+      - save_cache:
+          key: node-v1-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+      
+      - persist_to_workspace:
+            root: ~/vue-cli-plugin-editorconfig
+            paths:
+              - node_modules
