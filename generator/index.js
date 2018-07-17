@@ -1,9 +1,9 @@
 module.exports = (api, opts, rootOpts) => {
-  try {
-    api.render({
-      './.editorconfig': './templates/_editorconfig'
-    }, opts);
-  } catch(e) {
-    console.log(e);
+  if (opts.configType == 'basic') {
+    api.render({'./.editorconfig': './templates/basic/_editorconfig'}, opts)
+  }
+
+  if (opts.configType == 'advanced') {
+    api.render({'./.editorconfig': './templates/advanced/_editorconfig'}, opts)
   }
 }
