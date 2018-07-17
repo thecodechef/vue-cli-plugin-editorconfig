@@ -9,7 +9,7 @@ module.exports = [
     name: 'setCharset',
     type: 'list',
     message: 'What is the charset?',
-    choices: ['latin1','utf-8','utf-16be','utf-16le','utf-8-bom']
+    choices: ['latin1','utf-8','utf-16be','utf-16le','utf-8-bom'],
     default: 'utf-8'
   },
   {
