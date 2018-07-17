@@ -1,31 +1,14 @@
-<% if (opts) { %>
-<% if (opts.isRoot) { %>
+
 root=<%= opts.isRoot %>
-<% } %>
 
 [*]
-<% if (opts.setCharset) { %>
 charset=<%= opts.setCharset %>
-<% } %>
-<% if (opts.setLineEndings) { %>
 end_of_line=<%= opts.setLineEndings %>
-<% } %>
-<% if (opts.setIndentStyle) { %>
 indent_style=<%= opts.setIndentStyle %>
-<% } %>
-<% if (opts.setIndentSize) { %>
 indent_size=<%= opts.setIndentSize %>
-<% } %>
-<% if (opts.setInsertFinalNewline) { %>
 insert_final_newline=<%= opts.setInsertFinalNewline %>
-<% } %>
-<% if (opts.setTrimTrailingWhitespace) { %>
 trim_trailing_whitespace=<%= opts.setTrimTrailingWhitespace %>
-<% } %>
 
-<% if (opts.setInsertFinalNewline && opts.setTrimTrailingWhitespace) %>
 [*.md]
 insert_final_newline=<%= !opts.setInsertFinalNewline %>
 trim_trailing_whitespace=<%= !opts.setTrimTrailingWhitespace %>
-<% } %>
-<% } %>
