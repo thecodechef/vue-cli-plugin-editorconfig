@@ -1,4 +1,7 @@
 # vue-cli-plugin-editorconfig
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/thecodechef/vue-cli-plugin-editorconfig.svg)](https://greenkeeper.io/)
+
 A VueJS CLI plugin that generates a .editorconfig file for you.
 
 
