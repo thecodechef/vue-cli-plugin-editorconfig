@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/thecodechef/vue-cli-plugin-editorconfig#readme",
   "devDependencies": {
-    "vuepress": "^0.14.8",
+    "vuepress": "^1.0.0",
     "@vue/cli-service": "^3.0.0-rc.5",
     "url-parse": ">=1.4.3"
   }
